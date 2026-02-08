@@ -7,7 +7,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    "x-api-key": process.env.ANTHROPIC_API_KEY || "sk-65bde8d974b144fb828067de100d9629",
+    "x-api-key": process.env.ANTHROPIC_API_KEY || "",
     "anthropic-version": "2023-06-01",
   };
 
